@@ -21,7 +21,7 @@ JavaScript
 
 Installation
 Clone the repository:
-git clone https://github.com/your-username/task-management-app.git
+git clone https://github.com/KalpanaMehta/task_manager.git
 cd task-manager
 Create a virtual environment and activate it:
 python -m venv venv
