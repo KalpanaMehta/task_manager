@@ -46,35 +46,7 @@ View Task: Click on a task title to view its details.
 Edit Task: Click the "Edit" button  to update its details.
 Delete Task: Click the "Delete" button next to remove it from the list.
 
-Project Structure
 
-task_management_app/
-│
-├── tasks/
-│   ├── migrations/
-│   ├── static/
-│   │   ├── css/
-│   │   │   └── styles.css
-│   ├── templates/
-│   │   ├── tasks/
-│   │   │   ├── base.html
-│   │   │   ├── index.html
-│   │   │   ├── task_detail.html
-│   │   │   ├── task_form.html
-│   ├── admin.py
-│   ├── apps.py
-│   ├── models.py
-│   ├── serializers.py
-│   ├── urls.py
-│   ├── views.py
-│   └── tests.py
-│
-├── task_manageer/
-│   ├── settings.py
-│   ├── urls.py
-│   ├── wsgi.py
-│
-├── manage.py
 CSS Styling
 The custom styles for the application are defined in the styles.css file located in the tasks/static/css/ directory. The file includes styles for the title, buttons, task status badges, and overall layout.
 
