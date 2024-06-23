@@ -1,7 +1,8 @@
-{% comment %} Front Page where task will display {% endcomment %}
+
 {% extends 'tasks/base.html' %}
 {% block content %}
-<h1>Tasks</h1>
+<div class="task-mainbox">
+    <h1>TASKS</h1>
 <a href="{% url 'task-create' %}" class="btn btn-primary">
     <i class="bi bi-plus"></i> Add Task
 </a>
@@ -11,9 +12,13 @@
     <li class="list-group-item d-flex justify-content-between align-items-center">
         <a href="{% url 'task-detail' task.id %}">{{ task.title }}</a>
         <div>
+            <span class="badge {% if task.status == 'completed' %}bg-success{% elif task.status == 'started' %}bg-info{% else %}bg-warning{% endif %}">
+                {{ task.get_status_display }}
+            </span>
             <a href="{% url 'task-update' task.id %}" class="btn btn-sm btn-warning">
                 <i class="bi bi-pencil"></i> Edit
             </a>
+
             <form action="{% url 'task-delete' task.id %}" method="post" class="d-inline">
                 {% csrf_token %}
                 <button type="submit" class="btn btn-sm btn-danger">
@@ -24,5 +29,6 @@
     </li>
     {% endfor %}
 </ul>
+</div>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
 {% endblock %}

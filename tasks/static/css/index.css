@@ -13,7 +13,10 @@ h1 {
     text-align: center;
 
 }
-
+.container .task-mainbox{
+  margin:10px 25px;
+  padding:0px 10px;
+}
 body .container .btn-primary {
     background-color: #355E3B; 
     border-color: #355E3B;
