@@ -14,6 +14,7 @@ class TaskListCreate(generics.ListCreateAPIView):
 class TaskRetrieveUpdateDestroy(generics.RetrieveUpdateDestroyAPIView):
     queryset = Task.objects.all()
     serializer_class = TaskSerializer
+
 # Function-based view for listing tasks
 def task_list(request):
     tasks = Task.objects.all()

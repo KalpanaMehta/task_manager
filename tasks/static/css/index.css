@@ -105,3 +105,12 @@ body .container .btn-warning {
 .d-inline {
     display: inline-block;
 }
+.task-id .taskid{
+    background-color: #355E3B; 
+    color: #FFFFFF;
+    border: none;
+}
+
+.task-title {
+    margin-left: 10px;
+}

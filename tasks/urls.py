@@ -1,11 +1,11 @@
 from django.urls import path
-from .views import TaskListCreate, TaskRetrieveUpdateDestroy, task_list, task_detail, task_create, task_update, task_delete
+from .views import TaskListCreate, TaskRetrieveUpdateDestroy,task_list, task_detail, task_create, task_update, task_delete
 
 urlpatterns = [
     # API endpoints
     path('api/tasks/', TaskListCreate.as_view(), name="task-list-create"),
     path('api/tasks/<int:pk>/', TaskRetrieveUpdateDestroy.as_view(), name='task-retrieve-update-destroy'),
-
+  
     # Front-end views
     path('tasks', task_list, name='task-list'),
     path('tasks/new/', task_create, name='task-create'),
