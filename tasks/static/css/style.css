@@ -1,0 +1,12 @@
+/* css for base template */
+body {
+    background-image: url('/static/images/asthetic.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px; 
+}
+
