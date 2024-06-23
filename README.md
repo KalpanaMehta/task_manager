@@ -2,6 +2,8 @@ Task Management Application
 
 This is a Task Management Application built with Django and Django REST Framework for the back-end and HTML,CSS, Js, Bootstrap for the front-end. The application allows users to create, view, update, and delete tasks. Each task includes a title, description, due date, and status (Pending, Started, or Completed).
 
+
+
 Features
 Landing page displaying a list of tasks
 Add new tasks with a title, description,status and due date
@@ -54,3 +56,11 @@ Acknowledgments
 Django
 Django REST Framework
 Bootstrap
+
+## Sample Images
+<img src="https://github.com/KalpanaMehta/task_manager/blob/main/photos/Screenshot%202024-06-24%20035345.png" alt="Alt text" width="600" height="400">
+
+<img src="https://github.com/KalpanaMehta/task_manager/blob/main/photos/Screenshot%202024-06-24%20035401.png" alt="Alt text" width="600" height="400">
+
+<img src="https://github.com/KalpanaMehta/task_manager/blob/main/photos/Screenshot%202024-06-24%20035413.png" alt="Alt text" width="600" height="400">
+
